@@ -5,20 +5,16 @@
 </head><body> 
 <?php 
 //inicializamos 
-echo "Array ordenado inicializado en la declaración <hr>";
-$nombres = array( 
-    'nombre1' => 'Pablo', 
-    'nombre2' => 'Manuel', 
-    'nombre3' => 'Bárbara', 
-    'nombre4' => 'Ana', 
-    'nombre5' => 'Paola'
-); 
+
+  $nombres = array( 
+            "Pablo", "Manuel", "Bárbara", "Ana", "Paola"
+        ); 
 
 
 //foreach clave->elemento 
-echo "Recorrido mediante bucle for"; 
-for ($element =1; $element <= SIZE; $element++){ 
-    echo $element . '<br>'; 
+echo "Recorrido mediante bucle foreach ordenado :" . '<br>'; 
+foreach ($nombres as $position=>$element){ 
+    echo $position . ": " . $element . '<br>'; 
 } 
 
 ?> 
