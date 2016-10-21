@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Servlet Formulario</title>        
+    </head>
+    <body>"
+        <?php 
+        $recordado = "";
+        $cookies= array();
+        $cookies = request.getCookies();
+        if ($cookies != null){  
+             foreach($_COOKIE as $nombre => $valor){ //recorre el array
+                if ($cookie.getName().equals("nombre")){ //busca la cookie que se llame "nombre"
+                    $recordado = $cookie.getValue();  //guardas el texto de la cookie en 'recordado'
+                }
+            }
+        }   
+        ?>
+        <h1>Servlets y Cookies</h1>
+        <form method='post' action='Recepcion.php'>
+        Nombre: 
+        <input type='text' name='nombre' value='" + recordado +  "'><p>
+        Contraseña: 
+        <input type='password' name='password'><p>       
+        Recordar nombre de usuario 
+        <input type='checkbox' name='recordar'><p>
+
+        <input type='submit'>
+        </form>
+    </body>
+</html>
