@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<!--Crea una lista de usuarios y telefonos. Esta vez deebes guardar la información en variables de sesión. Utiliza una clase App donde este la lógica del programa y un fichero vista.php donde construyas la vista generada con los usuarios guardados en la sesion.-->
+    <head>
+        <title>Sesiones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Alta de usuario
+            <form action="Lista3" method="post">  <!--Se envian los datos al servlet lista3-->
+                <label>Nombre</label>
+                <input type="text" name="nombre"><br>
+
+                <label>Teléfono</label>
+                <input type="text" name="telefono"><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+            <hr>
+            <!--<form action="ResetSesion" method="post"> 
+            <!--Ejcuta el servlet ResetSession que borra la lista-->
+                <input type="submit" value="Borrar lista">
+            </form>
+        </div>
+    </body>
+</html>
